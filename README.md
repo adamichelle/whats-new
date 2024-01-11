@@ -8,7 +8,7 @@ This repository contains the starter code for the Daily Ocean article that demon
 - **Fork** the repository. This step is key to creating your own personal copy of the project in your GitHub account.
 - Clone the repository to your computer
 ```
-git clone https://github.com/adamichelle/whats-new.git
+git clone https://github.com/{your-github-username}/whats-new.git
 ```
 - Checkout the starter branch by running the following command
 ```
