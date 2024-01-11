@@ -17,6 +17,10 @@ git checkout do/starter-code
 - If you don't have one yet, get an API key from [News API](https://newsapi.org/).
 - Create a copy of `.env.example` file and rename it to `.env`
 - Replace the placeholder `your-news-api-key` value for `VITE_NEWS_API_KEY` with your API key from [News API](https://newsapi.org/) and save the `.env` file.
+- Install the project dependencies
+```
+npm install
+```
 - To run the project locally, run the command below:
 ```
 npm run dev
