@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .pill-styled-checkbox__input {
+    @apply opacity-0 w-0 h-0 absolute;
+  }
+
+  .pill-styled-checkbox__input:focus,
+  .pill-styled-checkbox__input:checked {
+    @apply focus:outline-none;
+  }
+
+  .pill-styled-checkbox__input:focus+label.pill-styled-checkbox__label,
+  .pill-styled-checkbox__input:focus-within+label.pill-styled-checkbox__label {
+    @apply ring-4 ring-gray-200 dark:ring-gray-700;
+  }
+
+  .pill-styled-checkbox__input:hover+label.pill-styled-checkbox__label {
+    @apply hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:border-gray-600;
+  }
+
+  .pill-styled-checkbox__input:checked+label.pill-styled-checkbox__label {
+    @apply text-white bg-gray-800 hover:bg-gray-900 ring-4 ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-gray-800 dark:ring-gray-700 dark:border-gray-700;
+  }
+
+  .pill-styled-checkbox__label {
+    @apply cursor-pointer select-none text-gray-900 bg-white border border-gray-300 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600;
+  }
+}
