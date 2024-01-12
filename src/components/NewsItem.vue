@@ -1,7 +1,7 @@
 <script setup>
-import * as dayjs from 'dayjs'
-import * as relativeTime from 'dayjs/plugin/relativeTime'
-import * as updateLocale from 'dayjs/plugin/updateLocale'
+import dayjs from 'dayjs'
+import relativeTime from 'dayjs/plugin/relativeTime'
+import updateLocale from 'dayjs/plugin/updateLocale'
 import { computed } from 'vue'
 
 import NoImageAvailablePlaceholder from '../assets/no-image-available.png'
