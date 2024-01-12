@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watchEffect } from 'vue';
 import SelectDropdown from './SelectDropdown.vue';
 
 const props = defineProps({
@@ -22,8 +22,8 @@ const unitsDropdownOptions = [
   }
 ]
 
-const chosenNumber = ref(props.defaultDurationSettings.number)
-const chosenDuration = ref(props.defaultDurationSettings.duration)
+const chosenNumber = ref(0)
+const chosenDuration = ref('')
 
 const handleNumberInputChange = (e) => {
   chosenNumber.value = e.target.value
@@ -32,6 +32,11 @@ const handleNumberInputChange = (e) => {
 const handleUnitsInputChange = (value) => {
   emit('update:duration', value)
 }
+
+watchEffect(() => {
+  chosenNumber.value = props.defaultDurationSettings.number
+  chosenDuration.value = props.defaultDurationSettings.duration
+})
 </script>
 
 <template>
