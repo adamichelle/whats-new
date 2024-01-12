@@ -4,8 +4,8 @@ import {
   initModals,
   initTabs
 } from 'flowbite'
-import * as dayjs from 'dayjs'
-import * as duration from 'dayjs/plugin/duration'
+import dayjs from 'dayjs'
+import duration from 'dayjs/plugin/duration'
 
 import NewsItems from './components/NewsItems.vue'
 import SettingsModal from './components/SettingsModal.vue'

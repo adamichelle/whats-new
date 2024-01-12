@@ -1,7 +1,7 @@
 <script setup>
 import { computed, onUpdated, ref, watch, watchEffect } from 'vue'
-import * as dayjs from 'dayjs'
-import * as duration from 'dayjs/plugin/duration'
+import dayjs from 'dayjs'
+import duration from 'dayjs/plugin/duration'
 
 import SelectDropdown from './SelectDropdown.vue'
 import FeedArticleDurationInput from './FeedArticleDurationInput.vue'

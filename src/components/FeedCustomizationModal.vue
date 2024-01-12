@@ -1,8 +1,8 @@
 <script setup>
 import { computed, onMounted, ref, watchEffect } from 'vue'
-import * as dayjs from 'dayjs'
-import * as duration from 'dayjs/plugin/duration'
-import * as relativeTime from 'dayjs/plugin/relativeTime'
+import dayjs from 'dayjs'
+import duration from 'dayjs/plugin/duration'
+import relativeTime from 'dayjs/plugin/relativeTime'
 
 import SelectDropdown from './SelectDropdown.vue'
 import CheckboxInput from './CheckboxInput.vue'
